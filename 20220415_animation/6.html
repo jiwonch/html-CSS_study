@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            position: absolute;
+            left: 100px;
+            width: 100px;
+            height: 50px;
+            background-color: #000;
+            color: #fff;
+            animation: timing 5s 2 alternate;
+        }
+
+        .ease{
+            animation-timing-function: ease;
+        }
+
+        .ease_in{
+            top: 70px;
+            animation-timing-function: ease-in;
+        }
+
+        .ease_out{
+            top: 130px;
+            animation-timing-function: ease-out;
+        }
+
+        .ease_in_out{
+            top: 190px;
+            animation-timing-function: ease-in-out;
+        }
+        
+        .linear{
+            top: 250px;
+            animation-timing-function: linear;
+        }
+
+        .step_start{
+            top: 310px;
+            animation-timing-function: step-start;
+        }
+
+        .step_end{
+            top: 370px;
+            animation-timing-function: step-end;
+        }
+
+        .steps1{
+            top: 430px;
+            animation-timing-function: steps(5,start);
+        }
+
+        .step2{
+            top: 490px;
+            animation-timing-function: steps(5,end);
+        }
+
+        @keyframes timing {
+            0%{
+                left: 100px;
+            }
+
+            100%{
+                left: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ease">ease<br>(기본)</div>
+    <div class="ease_in">ease-in</div>
+    <div class="ease_out">ease-out</div>
+    <div class="ease_in_out">ease-in-out</div>
+    <div class="linear">linear</div>
+    <div class="step_start">step-start</div>
+    <div class="step_end">step-end</div>
+    <div class="steps1">steps(5, start)</div>
+    <div class="steps2">steps(5, end)</div>
+</body>
+</html>

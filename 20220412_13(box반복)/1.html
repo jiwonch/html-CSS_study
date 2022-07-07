@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #test{
+            width: 600px;
+            background-color: yellow;
+            float: left;
+            height: 500px;
+        }
+        #test .box{
+            width: 130px;
+            height: 300px;
+            float: left;
+            background-color: pink;
+        }
+        #test .box:nth-of-type(1){
+            float:left;
+            background-color: red;
+            margin: 0 0 0 100px;
+        }
+        .mr5{
+            float: left;
+            margin: 0 10px 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="test">
+        <h1>123</h1>
+        <div class="box mr5"></div>
+        <div class="box mr5"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 10px;
+        }
+
+        .box{
+            width: 150px;
+            height: 150px;
+            color: #fff;
+            background-color: red;
+            animation: box_colorchange 5s linear infinite alternate running;
+        }
+
+        .box:hover{
+            animation-play-state: paused;
+        }
+
+        @keyframes box_colorchange {
+            0%{
+                background-color: red;
+                transform: translate(0,0) scale(0.3, 0.3) rotate(0deg);
+            }
+            10%{
+                background-color: orange;
+            }
+            20%{
+                background-color: yellow;
+                transform: translate(80px,50px) scale(0.6, 0.6) rotate(125deg);
+            }
+            30%{
+                background-color: lightgreen;
+            }
+            40%{
+                background-color: green;
+                transform: translate(150px,20px) scale(1, 1) rotate(180deg);
+            }
+            50%{
+                background-color: blue;
+                
+            }
+            60%{
+                background-color: navy;
+                transform: translate(50px,70px) scale(0.7, 0.7) rotate(270deg);
+            }
+            70%{
+                background-color: purple;
+            }
+            100%{
+                background-color: red;
+                transform: translate(0,0) scale(0.3, 0.3,) rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">animation</div>
+</body>
+</html>

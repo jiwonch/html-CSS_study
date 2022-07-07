@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            display: none;
+        }
+        input[value="강원도"]:checked ~.box{
+            display: block; 
+            background-color: gold;
+            transition: all 0.5s ease;
+        }
+        input[value="경기도"]:checked ~.box{
+            display: block; 
+            background-color: pink;
+            transition: all 0.5s ease;
+        }
+        input[value="경상북도"]:checked ~.box{
+            display: block; 
+            background-color: tomato;
+            transition: all 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <input type="radio" name="zone" value="강원도" checked><span>강원도</span>
+    <input type="radio" name="zone" value="경기도"><span>경기도</span>
+    <input type="radio" name="zone" value="경상북도"><span>경상북도</span>
+
+    <div class="box"></div>
+</body>
+</html>

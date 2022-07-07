@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #banner{
+            width: 500px;
+            height: 200px;
+            background-color: gold;
+        }
+
+        .a{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            border: 5px solid #666;
+            margin: 20px;
+            display: inline-block;
+        }
+
+        .b{
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            border: 20px solid #666;
+            margin: 20px;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+
+        .c{
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            border: 20px solid #666;
+            margin: 20px;
+            display: inline-block;
+            box-sizing: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="banner">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            width: 150px;
+            height: 120px;
+            border: 1px solid #ddd;
+        }
+
+        .a{
+            background-image: url(img/img_flwr.gif);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .b{
+            background-image: url(img/img_flwr.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .c{
+            background-image: url(img/img_flwr.gif);
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <h3>background-size: contain</h3>
+    <div class="a"></div>
+
+    <h3>background-size: cover</h3>
+    <div class="b"></div>
+
+    <h3>No background-size defined:</h3>
+    <div class="c"></div>
+
+    <p>Original image:</p>
+    <img src="img/img_flwr.gif" alt="original img" width="200" height="150">
+</body>
+</html>

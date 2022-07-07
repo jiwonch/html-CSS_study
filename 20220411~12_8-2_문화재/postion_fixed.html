@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            height: 10500px;
+        }
+        .testbox1{
+            width: 100px;
+            height: 10000px;
+            background-color: red;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            z-index: 3;
+        }
+
+        .testbox2{
+            width: 800px;
+            height: 100px;
+            background-color: yellow;
+            position: fixed;
+            top: 50px;
+            right: 100px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="testbox1">&nbsp;</div>
+    <div class="testbox2">고정 (fixed)</div>
+</body>
+</html>

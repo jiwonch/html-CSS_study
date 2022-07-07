@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+
+    <style>
+        #imgbox{
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+            margin: 20px;
+        }
+        #imgbox img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        #imgbox img:not(:first-child){
+            display: none;
+        }
+        #view{
+            opacity: 0;
+        }
+        input[type="checkbox"]:checked ~#view{
+            opacity: 1;
+        }
+        input[value="사진1"]:checked ~#imgbox img[alt="사진1"]{
+            display: block;
+        }
+        input[value="사진2"]:checked ~#imgbox img[alt="사진2"]{
+            display: block;
+        }
+        input[value="사진3"]:checked ~#imgbox img[alt="사진3"]{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox"><span>사진보기</span><p>
+    
+    <div id="view">
+        <input type="radio" name="num" value="사진1" checked><span>사진1</span>
+        <input type="radio" name="num" value="사진2"><span>사진2</span>
+        <input type="radio" name="num" value="사진3"><span>사진3</span>
+
+        <div id="imgbox">
+            <img src="a.jpg" alt="사진1">
+            <img src="b.jpg" alt="사진2">
+            <img src="c.jpg" alt="사진3">
+        </div>
+    </div>
+</body>
+</html>
